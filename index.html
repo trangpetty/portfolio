@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Le</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Petty
+            <span>Trang</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Trang Le</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Hello! I’m Trang Le, a passionate software engineer specializing in Vue.js and Spring Boot. I hold a Bachelor of Engineering and have experience in developing web applications and optimizing system performance.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/trang-le-933ab8280/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/trangpetty"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/petty.trang/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100005014935213"><i class='bx bxl-facebook-square' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="selfie.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2024</div>
+                <div class="timeline-content">
+                    <h3>HUCE</h3>
+                    <p>Graduated with a Bachelor’s degree in Software Engineering. Acquired in-depth knowledge and skills in software development and engineering principles.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h3>Aptech Computer Education</h3>
+                    <p>Completed a basic web development course, covering foundational skills in HTML, CSS, JavaScript, and web design principles.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="service-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Frontend Developer</h4>
+                    <ul>
+                        <li>Develop responsive web interfaces using Vue.js, React, HTML, CSS, and JavaScript with Bootstrap, Element-Plus or AntD.</li>
+                        <li>Build Single Page Applications (SPA) with Vue.js or React for seamless user experiences.</li>
+                        <li>Create reusable components and integrate APIs for dynamic content.</li>
+                        <li>Responsive and Mobile-First Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Web Developer</h4>
+                    <ul>
+                        <li>Full-stack web development: Front-end (Vue.js, React, HTML, CSS, JavaScript) & Back-end (Spring Boot, REST APIs).</li>
+                        <li>Real-time functionality with WebSocket integration for live updates.</li>
+                        <li>API development and integration for dynamic content.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+
+            <div class="wrapper">
+                <div class="project-item">
+                    <img src="main.png" alt="">
+                    <h2>thecoffeehouse</h2>
+                    <p>The Coffee House is a web app using Vue.js and Spring Boot, offering product ordering, JWT authentication, real-time updates via WebSocket, and features like ratings and order management.</p>
+                </div>
+                <div class="project-item">
+                    <img src="netflix.png" alt="">
+                    <h2>netflix</h2>
+                    <p>Netflix is a web app built with React, Redux, Saga, and Spring Boot, providing features like user authentication, real-time updates via WebSocket, video streaming, personalized recommendations, and multi-device support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="https://formspree.io/f/xvgordqr" method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/trang-le-933ab8280/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/trangpetty"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/petty.trang/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100005014935213"><i class='bx bxl-facebook-square' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#projects">projects</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            <i class='bx bx-copyright' ></i> Petty | All Rights Reserved
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
