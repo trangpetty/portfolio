@@ -1,1 +1,1 @@
-Check out my portfolio here: [Portfolio](https://trangpetty/portfolio)
+Check out my portfolio here: [Portfolio](https://trangpetty.github.io/portfolio)
