@@ -26,6 +26,10 @@ body {
     color: var(--text-color);
     font-family: "Poppins", serif;
 }
+p, li {
+    line-height: 1.5;
+    font-size: 2rem;
+}
 
 .header {
     position: fixed;
@@ -79,16 +83,19 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 5rem 12% 5rem;
+    max-width: 1340px;
+    margin: 3rem auto;
+    background-color: var(--second-bg-color);
+    padding: 3rem 5rem;
+    border-radius: 2rem;
 }
 
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: center;
     gap: 15rem;
+    margin-top: 120px;
 }
 
 .home-content {
@@ -127,7 +134,6 @@ span {
 
 .home-img img {
     position: relative;
-    top: 3rem;
     width: 32vw;
     height: 32vw;
     object-fit: cover;
@@ -144,7 +150,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -223,11 +229,11 @@ span {
 
 .text-animation span::after {
     content: "";
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     position: absolute;
     width: calc(100% + 0.5rem);
     height: 100%;
-    border-left: 3px solid var(--bg-color);
+    border-left: 3px solid var(--second-bg-color);
     right: -0.5rem;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
@@ -290,12 +296,6 @@ span {
 .heading {
     font-size: 8rem;
     text-align: center;
-    margin: 5rem 0;
-}
-
-.education {
-    padding: 5rem 15px;
-    background: var(--second-bg-color);
 }
 
 .education h2 {
@@ -308,6 +308,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .timeline-items::before {
@@ -373,34 +374,55 @@ span {
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 3rem;
     color: white;
+    font-weight: 700;
     margin: 0 0 10px;
+}
+
+.timeline-content p,
+.timeline-content h4,
+.timeline-content li {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.timeline-content h4 {
     font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .timeline-content p {
-    color: white;
-    font-size: 1rem;
+    text-align: left;
+}
+
+.timeline-content ul {
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 22px;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.timeline-content li {
+    padding: 0.5rem 0;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background-color: #fff;
+    border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--main-color);
-    width: 50px;
 }
 
 .services {
-    background-color: var(--bg-color);
     color: black;
 }
 
@@ -414,11 +436,12 @@ span {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .service-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 450px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -433,12 +456,7 @@ span {
 }
 
 .service-box .service-info {
-    display: flex;
-    flex-direction: column;
     text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
     padding: 5rem;
 }
 
@@ -448,22 +466,16 @@ span {
     line-height: 2;
 }
 
-.service-info p, .service-info ul {
-    font-size: 1.6rem;
+.service-info p, 
+.service-info ul {
+    font-size: 2rem;
     font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-}
-
-.projects {
-    background: var(--second-bg-color);
+    line-height: 1.5;
 }
 
 .projects-box {
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -472,34 +484,37 @@ span {
     margin-bottom: 5rem;
 }
 
+.projects-box .sub-heading {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
 .projects-box img {
     height: 360px;
-    width: 100%;
+    max-width: 45%;
+    flex: 0 0 45%;
     object-fit: cover;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .project-item {
-    min-height: 550px;
-    max-width: 450px;
+    min-height: 400px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
-    margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 30px;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     gap: 1.5rem;
     color: white;
     transition: 0.4s ease-in-out;
@@ -512,12 +527,11 @@ span {
 }
 
 .project-item h2 {
-    font-size: 2.8rem;
+    font-size: 4.5rem;
 }
 
 .project-item p {
-    font-size: 1.3rem;
-    text-align: justify;
+    font-size: 2rem;
 }
 
 .contact {
@@ -531,7 +545,6 @@ span {
 
 .contact form {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 3rem;
     margin: 5rem auto;
@@ -558,7 +571,9 @@ span {
 }
 
 .contact form .btn {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 5rem;
 }
 
 .footer {
@@ -625,6 +640,42 @@ footer ul li a:hover {
     text-align: center;
     font-size: 1rem;
     color: white;
+}
+
+.my-custom-popup {
+    width: 600px !important;     
+    border: 2px solid var(--main-color);       
+    border-radius: 20px;         
+    box-shadow: 0 0 15px var(--main-color); 
+    padding: 2rem;  
+}
+
+.my-custom-title {
+    font-size: 3rem !important; 
+    margin-bottom: 10px;
+}
+
+.my-custom-text {
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    font-family: "Poppins", serif!important;
+}
+
+.my-custom-close {
+    color: var(--main-color) !important;
+    font-size:3rem !important; 
+}
+
+.my-custom-close:hover {
+    color: #fff !important; 
+}
+
+.my-custom-close:focus {
+    box-shadow: none !important;
+}
+
+.ml-2 {
+    margin-left: 2rem;
 }
 
 @media (max-width: 1285px) {
