@@ -33,7 +33,7 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
         console.log(data) 
         Swal.fire({
-            title: 'Sending ...',
+            title: 'Sending...',
             text: 'Please wait a moment ^-^!',
             allowOutsideClick: false,
             background: '#1f242d', 
@@ -136,6 +136,6 @@ if (contactForm) {
                     }
                 });
             });
-        }, 2000);
+        }, 3000);
     });
 }
